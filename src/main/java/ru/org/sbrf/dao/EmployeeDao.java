@@ -2,6 +2,7 @@ package ru.org.sbrf.dao;
 
 import org.hibernate.Session;
 import ru.org.sbrf.dto.Employee;
+import ru.org.sbrf.dto.Function;
 import ru.org.sbrf.exception.AddObjectException;
 import ru.org.sbrf.hibernate.HibernateUtil;
 
@@ -17,7 +18,7 @@ public class EmployeeDao implements Dao<Employee> {
         session = HibernateUtil.getSession().openSession();
     }
 
-    public void add(Employee object) throws AddObjectException{
+    public void add(Employee object) throws AddObjectException {
         session.beginTransaction();
         session.saveOrUpdate(object);
         session.getTransaction().commit();
@@ -50,6 +51,11 @@ public class EmployeeDao implements Dao<Employee> {
         session.beginTransaction();
         session.update(employee);
         session.getTransaction().commit();
-        session.clear();
+    }
+
+    public List<Function> getFunctions() {
+        FunctionDao functionDao = new FunctionDao();
+
+        return functionDao.getAll();
     }
 }

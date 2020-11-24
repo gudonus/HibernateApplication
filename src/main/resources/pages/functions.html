@@ -7,7 +7,7 @@
 </head>
 <body link="yellow" vlink="#00008b" alink="#ffd700" bgcolor="#87cefa">
 <br>
-<H1> EMPLOYEE DIRECTORY </H1>
+<H1> FUNCTION DIRECTORY </H1>
 <table border="1">
     <thead>
     <tr>
@@ -16,7 +16,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="employee : ${functions}">
+    <tr th:each="function : ${functions}">
         <td><span th:text="${function.id}"> ID </span></td>
         <td><span th:text="${function.name}"> Name </span></td>
 
@@ -24,15 +24,12 @@
         <td><a th:href="@{/function/delete/__${function.id}__/}"><input type="submit" value="x" th:href="@{/function/delete/__${function.id}__/}"/></a></td>
     </tr>
     </tbody>
-
-
-
 </table>
 <br>
 <br>
-<a href="/function/add/"><H4> Add New Function </H4></a>
+<a href="/function/add/"><H4> Add </H4></a>
 <br>
-<a href="/../"><H4> Go Back To Main Page </H4></a>
+<a href="/employee/"><H4> Go Back To Main Page </H4></a>
 
 </body>
 </html>

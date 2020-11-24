@@ -8,9 +8,20 @@ public class Employee {
 
     private String surName;
 
+    private Function function;
+
     private String phone;
 
-    private Function function;
+    private String address;
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Function getFunction() {
         return function;

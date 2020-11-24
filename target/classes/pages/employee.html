@@ -24,6 +24,8 @@
         <td><span th:text="${employee.id}"> ID </span></td>
         <td><span th:text="${employee.firstName}"> Firstname </span></td>
         <td><span th:text="${employee.surName}"> Surname </span></td>
+        <td><span th:text="${employee.function}"> Function </span></td>
+        <td><span th:text="${employee.address}"> Address </span></td>
         <td><span th:text="${employee.phone}"> Phone </span></td>
 
         <td><a th:href="@{/employee/update/__${employee.id}__/}"><input type="submit" value="/" th:href="@{/employee/update/__${employee.id}__/}"/></a></td>
@@ -34,10 +36,11 @@
 <br>
 <br>
 <a href="/employee/add/"><H4> Add New Employee </H4></a>
-<a href="/employee/show/"><H4> Find Employee</H4></a>
 <a href="/function/"><H4> Add Function</H4></a>
+<br/>
+<!--<a href="/employee/show/"><H4> Find Employee</H4></a>-->
 <a href="/employee/showall/"><H4> Show All Employees </H4></a>
-<!--<a href="/employee/delete/"><H4> Delete Employee By ID </H4></a>-->
+<a href="/functions/"><H4> Show All Functions </H4></a>
 <br>
 <a href="/../"><H4> Go Back To Main Page </H4></a>
 
