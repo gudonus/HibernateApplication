@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body link="yellow" vlink="#00008b" alink="#ffd700" bgcolor="#87cefa">
+<H1> UPDATE PAGE</H1>
+<br/>
+<form action="#" th:action="@{/employee/update}" th:object="${employee}" method="post">
+    <input type="text" size="25" th:field="*{id}" id="id" placeholder="Id" readonly="true">
+    <br/>
+    <input type="text" size="25" th:field="*{firstName}" id="firstName" placeholder="Firstname">
+    <input type="text" size="25" th:field="*{surName}" id="surName" placeholder="Surname">
+    <br>
+    <input type="text" size="25" th:field="*{phone}" id="phone" placeholder="Phone">
+    <br/><br/><br/>
+    <input type="submit" value="Update Employee"/> <input type="reset" value="Reset"/>
+</form>
+<br/>
+<a href="/employee/"><H4> Go Back To Menu Page </H4></a>
+</body>
+</html>

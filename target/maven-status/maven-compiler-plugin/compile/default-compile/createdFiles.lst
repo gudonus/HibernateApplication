@@ -1,0 +1,12 @@
+ru\org\sbrf\dao\EmployeeDao.class
+ru\org\sbrf\config\HibernateApplicationConfig.class
+ru\org\sbrf\hibernate\HibernateUtil.class
+ru\org\sbrf\control\EmployeeController.class
+ru\org\sbrf\dao\Dao.class
+ru\org\sbrf\dto\Employee.class
+ru\org\sbrf\exception\AddObjectException.class
+HibernateApplication.class
+ru\org\sbrf\config\ApplicationContextProvider.class
+ru\org\sbrf\control\MainController.class
+ru\org\sbrf\exception\ObjectException.class
+ru\org\sbrf\config\HibernateWebInitializer.class
